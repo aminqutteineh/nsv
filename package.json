@@ -1,7 +1,6 @@
 {
   "name": "nsv",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,5 +22,15 @@
     "gulp-terser": "^2.0.1",
     "postcss": "^8.3.6",
     "sass": "^1.37.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aminqutteineh/nsv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aminqutteineh/nsv/issues"
+  },
+  "homepage": "https://github.com/aminqutteineh/nsv#readme",
+  "description": ""
 }
