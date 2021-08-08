@@ -1,7 +1,46 @@
+@use '../util/' as *;
+
 .body {
   flex-basis: 0;
   flex-grow: 999;
   min-width: 50%;
   height: 100vh;
   overflow: scroll;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+
+  @include breakpoint-down(medium) {
+    display: block;
+  }
+
+  @include breakpoint(large) {
+    min-height: 475px;
+  }
+
+  &:not(:last-child) {
+    border-bottom: solid 1px var(--black);
+  }
+
+  &__info {
+    flex-basis: 33.3333333333%;
+
+    @include breakpoint-down(small) {
+      padding-bottom: 1rem;
+    }
+
+  }
+
+  &__slideshow {
+    flex-basis: 66.6666666667%;
+    overflow: hidden;
+  }
+
+  .single-item {
+    width: 100%;
+  }
 }

@@ -1,1 +1,1 @@
-console.log('Syntax Error')
+console.log('Syntax Error: Undeliverable Word');

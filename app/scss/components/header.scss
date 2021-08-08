@@ -1,13 +1,40 @@
+@use '../util/' as *;
+
 .sidebar {
   flex-basis: 20rem;
   flex-grow: 1;
   flex-flow: column nowrap;
-  max-width: 15.625rem;
   height: 100vh;
-  border-right: solid 1px black;
+  border-right: solid 1px var(--black);
+
+  @include breakpoint-down(small) {
+    height: 170px;
+    display: block;
+    border-right: none;
+    border-bottom: solid 1px var(--black);
+  }
+
+  &__footer {
+    border-top: solid 1px var(--black);
+
+    @include breakpoint-down(small) {
+      display: none;
+    }
+  }
 
   #nsv-logo {
-      fill: var(--black);
-      width: 5rem;
+    fill: var(--black);
+    width: 5rem;
+    margin-bottom: 1rem;
   }
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include breakpoint-down(small) {
+        display: block;
+    }
 }
